@@ -1,0 +1,42 @@
+<!-- team = ["Pierre", "Paul", "Jacques"] -->
+
+<% team = ["Pierre", "Paul", "Jacques"] %>
+
+<h1>Notre équipe</h1>
+
+
+<div class="text-center">
+  <div class="container">
+    <div class="row">
+        <% team.each do |member| %>
+          <div class="col-xs-12 col-sm-4">
+            <img src="https://placehold.it/80x80" alt="" class="img-circle">
+            <p> <%= member %> </p>
+          </div>
+        <% end %>
+    </div>
+  </div>
+</div>
+
+
+
+<!--
+<div class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <img src="https://placehold.it/80x80" alt="" class="img-circle">
+          <p>Pierre</p>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <img src="https://placehold.it/80x80" alt="" class="img-circle">
+          <p>Paul</p>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <img src="https://placehold.it/80x80" alt="" class="img-circle">
+          <p>Jacques</p>
+      </div>
+    </div>
+  </div>
+</div>
+-->
